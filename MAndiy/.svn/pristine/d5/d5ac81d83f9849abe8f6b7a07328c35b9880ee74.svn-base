@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/title_layout"
+        style="@style/action_bar_blue"
+        android:background="@drawable/bg_edit_image_top"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:text="图片调亮"
+            android:textColor="#ffffff"
+            android:textSize="25px" />
+
+        <ImageView
+            android:id="@+id/close_adjust"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:onClick="btnClick"
+            android:src="@drawable/abs__ic_clear_normal" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_layout"
+        android:background="@drawable/bg_build" >
+
+        <SeekBar android:id="@+id/adjust_seekbar" style="@android:attr/progressBarStyle" android:layout_width="match_parent" android:layout_height="30dp"  android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

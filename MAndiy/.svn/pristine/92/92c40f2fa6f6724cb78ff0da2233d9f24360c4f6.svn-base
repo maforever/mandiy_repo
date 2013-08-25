@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/index_logo" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ScrollView android:id="@id/scroll" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/menu_one" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageButton android:id="@id/build_pic" android:background="@drawable/index_menu_pic" android:layout_width="@dimen/index_menu_width" android:layout_height="@dimen/index_menu_height" android:onClick="indexBtnClick"/> 
+                    <ImageButton android:id="@id/build_book" android:background="@drawable/index_menu_book" android:layout_width="@dimen/index_menu_width" android:layout_height="@dimen/index_menu_height" android:layout_marginLeft="2.0dip" android:onClick="indexBtnClick"/>
+                </LinearLayout>
+                <LinearLayout android:id="@id/menu_two" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+                    <ImageButton android:id="@id/build_card" android:background="@drawable/index_menu_card" android:layout_width="@dimen/index_menu_width" android:layout_height="@dimen/index_menu_height" android:onClick="indexBtnClick"/>
+                    <ImageButton android:id="@id/build_poster" android:background="@drawable/index_menu_poster" android:layout_width="@dimen/index_menu_width" android:layout_height="@dimen/index_menu_height" android:layout_marginLeft="2.0dip" android:onClick="indexBtnClick"/>
+                </LinearLayout>
+                <RelativeLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" />
+                <TextView android:gravity="center" android:id="@id/more" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="25.0dip" android:text="@string/refresh_footer_label" style="@style/text_15" />
+                <View android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/index_foot" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <Button android:id="@id/show_menu" android:background="@drawable/index_btn_open_menu" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+            <ImageView android:id="@id/new_msg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:src="@drawable/new_i" />
+        </RelativeLayout>
+        <ImageView android:id="@id/func_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/index_btn_edit" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    
+</RelativeLayout>

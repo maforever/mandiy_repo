@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_edit_bg" >
+
+        <ImageView
+            android:id="@id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnClick"
+            android:src="@drawable/btn_gray_back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottom" >
+
+        <LinearLayout
+            android:id="@id/top"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/logo_title_height"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:src="@drawable/logo_title_login" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/top"
+            android:background="#fff5f5f5"
+            android:orientation="vertical"
+            android:padding="20.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="登录印吧，免费得印豆，下单支付时可用"
+                android:textColor="#ff000000" />
+
+            <ImageView
+                android:id="@id/login_sina"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:src="@drawable/btn_logo_sina" />
+
+            <ImageView
+                android:id="@id/login_qqweibo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:src="@drawable/btn_logo_qqweibo" 
+                android:onClick="btnClick"/>
+
+            <ImageView
+                android:id="@id/login_qq"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:src="@drawable/btn_logo_qq" 
+                android:onClick="btnClick"
+                />
+
+            <ImageView
+                android:id="@id/login_anonymous"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:src="@drawable/btn_login_anonymous"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

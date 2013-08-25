@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <FrameLayout
+        android:id="@+id/slideout_placeholder"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#777777" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ff2a2a2a"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:src="@drawable/menu_logo" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <View style="@style/divider" />
+
+                <RadioButton
+                    android:id="@id/menu_index"
+                    style="@style/menu_item"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/menu_index"
+                    android:text="@string/menu_index" />
+
+                <View style="@style/divider" />
+
+                <RadioButton
+                    android:id="@id/menu_order"
+                    style="@style/menu_item"
+                    android:drawableLeft="@drawable/menu_order"
+                    android:text="@string/menu_order" />
+
+                <View style="@style/divider" />
+
+                <RadioButton
+                    android:id="@id/menu_gold"
+                    style="@style/menu_item"
+                    android:drawableLeft="@drawable/menu_gold"
+                    android:text="@string/menu_gold" />
+
+                <View style="@style/divider" />
+
+                <RadioButton
+                    android:id="@id/menu_upload"
+                    style="@style/menu_item"
+                    android:drawableLeft="@drawable/menu_upload"
+                    android:text="@string/menu_upload" />
+
+                <View style="@style/divider" />
+
+                <RadioButton
+                    android:id="@id/menu_message"
+                    style="@style/menu_item"
+                    android:drawableLeft="@drawable/menu_message"
+                    android:text="@string/menu_message" />
+
+                <View style="@style/divider" />
+
+                <RadioButton
+                    android:id="@id/menu_setting"
+                    style="@style/menu_item"
+                    android:drawableLeft="@drawable/menu_setting"
+                    android:text="@string/menu_setting" />
+
+                <View style="@style/divider" />
+            </RadioGroup>
+
+            <!--
+                 <ListView
+                android:id="@+id/list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000" />
+            -->
+        </LinearLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/slidedout_cover"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY" />
+
+</AbsoluteLayout>
