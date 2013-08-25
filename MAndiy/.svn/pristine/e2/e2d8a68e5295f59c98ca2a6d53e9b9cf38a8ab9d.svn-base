@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/action_bar_blue"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@id/title_name"
+            style="@style/text_18_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:maxWidth="180.0dip"
+            android:singleLine="true"
+            android:text="Photo"
+            android:textColor="#ffffffff"
+            android:textSize="22dp" />
+
+        <ImageView
+            android:id="@+id/next_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="btnClick"
+            android:src="@drawable/bg_btn_next" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="btnClick"
+            android:src="@drawable/bg_btn_back" />
+
+        <TextView
+            android:id="@id/title_name"
+            style="@style/text_18_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/back"
+            android:layout_centerInParent="true"
+            android:maxWidth="180.0dip"
+            android:singleLine="true"
+            android:text="相簿  "
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@id/title_name"
+            style="@style/text_18_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/next_step"
+            android:layout_centerInParent="true"
+            android:maxWidth="180.0dip"
+            android:singleLine="true"
+            android:text="下一步"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@id/bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="128.0dip"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_selected" >
+
+            <TextView
+                android:id="@id/nums_tips"
+                style="@style/text_15"
+                android:layout_width="wrap_content"
+                android:layout_height="28.0dip"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center_vertical"
+                android:textColor="@color/white" />
+
+            <HorizontalScrollView
+                android:id="@id/selected_scoller"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" >
+
+                <LinearLayout
+                    android:id="@id/selected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/media_selected_scroll_height"
+                    android:orientation="horizontal" >
+                    
+<!--                     <GridView
+                        android:id="@+id/selected_photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        
+                    </GridView> -->
+                    
+                </LinearLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+
+        <GridView
+            android:id="@id/grid_media"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/bottom"
+            android:background="#ffffffff"
+            android:fadingEdge="none"
+            android:gravity="center"
+            android:horizontalSpacing="2.0dip"
+            android:listSelector="@null"
+            android:numColumns="3"
+            android:padding="2.0dip"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="2.0dip" />
+    </RelativeLayout>
+
+</LinearLayout>

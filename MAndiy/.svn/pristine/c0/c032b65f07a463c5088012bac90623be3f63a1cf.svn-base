@@ -1,0 +1,48 @@
+package com.lanrui.andiy.service;
+
+import java.util.HashMap;
+
+import android.content.ContentResolver;
+import android.content.Context;
+import android.database.Cursor;
+import android.provider.MediaStore.Images.Thumbnails;
+import android.util.Log;
+
+public class SystemPicService {
+	
+	private ContentResolver cr;  
+	private Context context = null;
+	public SystemPicService(Context context) {
+		this.context = context;
+	}
+	public  String[] getThumbnailsPath() {
+		cr = context.getContentResolver();  
+		String[] projection = { Thumbnails._ID, Thumbnails.IMAGE_ID,  
+                Thumbnails.DATA };  
+        Cursor cursor = cr.query(Thumbnails.EXTERNAL_CONTENT_URI, projection,  
+                null, null, null);
+        if (cursor.moveToFirst()) {  
+            int _id;  
+            int image_id;  
+            String image_path;  
+            int _idColumn = cursor.getColumnIndex(Thumbnails._ID);  
+            int image_idColumn = cursor.getColumnIndex(Thumbnails.IMAGE_ID);  
+            int dataColumn = cursor.getColumnIndex(Thumbnails.DATA);  
+  
+            do {  
+                // Get the field values  
+                _id = cursor.getInt(_idColumn);  
+                image_id = cursor.getInt(image_idColumn);  
+                image_path = cursor.getString(dataColumn);  
+  
+                // Do something with the values.  
+                Log.i("SystemPicService", _id + " image_id:" + image_id + " path:"  
+                        + image_path + "---");  
+  
+            } while (cursor.moveToNext());  
+  
+        }  
+		return null;
+	}
+	
+}
