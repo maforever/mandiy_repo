@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  android:gravity="center">
-    <ImageView android:id="@id/media" android:background="#ff999999" android:layout_width="120dp" android:layout_height="120dp" android:scaleType="centerCrop"  />
-    <ImageView android:id="@id/already" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/already_selected" />
-    <ImageView android:id="@id/selected" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selected" android:layout_alignParentBottom="true" />
-</RelativeLayout>
