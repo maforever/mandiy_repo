@@ -1,0 +1,67 @@
+package com.lanrui.andiy.ui;
+
+import com.lanrui.andiy.R;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Gravity;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.PopupWindow;
+
+public class BuildBookActivity extends Activity {
+	private ImageView tools_more = null;
+	private PopupWindow popupWindow = null;
+	
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		
+		setContentView(R.layout.build_book);
+		tools_more = (ImageView) this.findViewById(R.id.tools_more);
+		View contentView = this.getLayoutInflater().inflate(R.layout.popwindow_menu, null);
+		popupWindow = new PopupWindow(contentView, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+		
+		
+	}
+	
+
+	public void btnClick(View view) {
+		switch (view.getId()) {
+		case R.id.index:
+			BuildBookActivity.this.finish();
+			Intent intent = new Intent(BuildBookActivity.this, IndexActivity.class);
+			startActivity(intent);
+		break;
+		case R.id.tools_more:
+			tools_more.setVisibility(ViewGroup.GONE);
+			View parent = this.findViewById(R.id.book_frame);
+			popupWindow.showAtLocation(parent, Gravity.RIGHT | Gravity.TOP, -10, 20);
+			break;
+		}
+	}
+	
+	@Override
+	public boolean onTouchEvent(MotionEvent event) {
+		if(MotionEvent.ACTION_DOWN == event.getAction()) {
+			if(popupWindow.isShowing()) {
+				popupWindow.dismiss();
+				tools_more.setVisibility(ViewGroup.VISIBLE);
+			}
+		}
+		return true;
+	}
+	
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		if(popupWindow.isShowing()) {
+			popupWindow.dismiss();
+			popupWindow = null;
+		}
+	}
+}

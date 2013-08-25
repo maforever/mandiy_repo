@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/action_bar_blue"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@id/title_name"
+            style="@style/text_18_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:maxWidth="180.0dip"
+            android:singleLine="true"
+            android:text="Photo"
+            android:textColor="#ffffffff"
+            android:textSize="22dp" />
+
+        
+
+        <ImageView
+            android:id="@+id/card_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="btnClick"
+            android:src="@drawable/bg_btn_back" />
+
+        <TextView
+            android:id="@id/title_name"
+            style="@style/text_18_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/card_back"
+            android:layout_centerInParent="true"
+            android:maxWidth="180.0dip"
+            android:singleLine="true"
+            android:text="相簿  "
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        
+
+        <GridView
+            android:id="@+id/card_grid_media"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/bottom"
+            android:background="#ffffffff"
+            android:fadingEdge="none"
+            android:gravity="center"
+            android:horizontalSpacing="2.0dip"
+            android:listSelector="@null"
+            android:numColumns="3"
+            android:padding="2.0dip"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="2.0dip" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/action_bar_blue" >
+
+        <TextView
+            android:id="@id/title_name"
+            style="@style/text_18_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:maxWidth="180.0dip"
+            android:singleLine="true"
+            android:textColor="#ffffffff" />
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/btn_b_back" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/pic_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:listSelector="@drawable/timer_list_selector"
+        >
+    </ListView>
+
+</LinearLayout>

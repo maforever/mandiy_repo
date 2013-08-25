@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+	<ViewFlipper 
+	    android:id="@+id/viewFlipper"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    
+	    <!-- 第一页 -->
+	    <LinearLayout
+	        android:id="@+id/viewflipper1"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" 
+	        >
+	        <ImageView 
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:src="@drawable/start_01"
+	            />
+	    </LinearLayout>
+	    
+	    	    <!-- 第二页 -->
+	    <LinearLayout
+	        android:id="@+id/viewflipper2"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" 
+	        >
+	        <ImageView 
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:src="@drawable/start_02"
+	            />
+	    </LinearLayout>
+	    
+	    	    <!-- 第三页 -->
+	    <LinearLayout
+	        android:id="@+id/viewflipper3"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" 
+	        >
+	        <ImageView 
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:src="@drawable/start_03"
+	            />
+	    </LinearLayout>
+	    
+	    	    <!-- 第四页 -->
+	    <LinearLayout
+	        android:id="@+id/viewflipper4"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" 
+	        >
+	        <ImageView 
+	            android:id="@+id/start_btn"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:src="@drawable/start_04"
+	            />
+	    </LinearLayout>
+	    
+	</ViewFlipper>
+</RelativeLayout>

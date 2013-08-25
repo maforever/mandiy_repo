@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abs__config_prefDialogWidth">320.0dip</dimen>
+    <dimen name="abs__action_bar_default_height">48.0dip</dimen>
+    <dimen name="abs__action_bar_icon_vertical_padding">8.0dip</dimen>
+    <dimen name="abs__action_bar_title_text_size">18.0dip</dimen>
+    <dimen name="abs__action_bar_subtitle_text_size">14.0dip</dimen>
+    <dimen name="abs__action_bar_subtitle_top_margin">-3.0dip</dimen>
+    <dimen name="abs__action_bar_subtitle_bottom_margin">5.0dip</dimen>
+    <dimen name="abs__action_button_min_width">56.0dip</dimen>
+    <dimen name="abs__alert_dialog_title_height">64.0dip</dimen>
+    <item type="dimen" name="abs__dialog_min_width_major">65.0%</item>
+    <item type="dimen" name="abs__dialog_min_width_minor">94.99999%</item>
+    <dimen name="abs__dropdownitem_text_padding_left">8.0dip</dimen>
+    <dimen name="abs__dropdownitem_text_padding_right">8.0dip</dimen>
+    <dimen name="abs__dropdownitem_icon_width">32.0dip</dimen>
+    <dimen name="abs__search_view_text_min_width">160.0dip</dimen>
+    <dimen name="abs__search_view_preferred_width">320.0dip</dimen>
+    <dimen name="menu_item_padding">10.0dip</dimen>
+    <dimen name="menu_header_padding_top">8.0dip</dimen>
+    <dimen name="menu_header_line">3.0dip</dimen>
+    <dimen name="menu_icon_side">40.0dip</dimen>
+    <dimen name="app_width">320.0dip</dimen>
+    <dimen name="action_bar_height">48.0dip</dimen>
+    <dimen name="action_bar_height_m">40.0dip</dimen>
+    <dimen name="action_bar_title">20.0dip</dimen>
+    <dimen name="action_bar_title_left_padding">13.0dip</dimen>
+    <dimen name="action_bar_title_right_padding">10.0dip</dimen>
+    <dimen name="media_selected_scroll_height">100.0dip</dimen>
+    <dimen name="media_selected_image_width">71.0dip</dimen>
+    <dimen name="media_selected_image_height">71.0dip</dimen>
+    <dimen name="media_selected_image_thumbnail_spacing">4.0dip</dimen>
+    <dimen name="media_adjust_bar_height">134.0dip</dimen>
+    <dimen name="menu_width">255.0dip</dimen>
+    <dimen name="index_menu_width">139.0dip</dimen>
+    <dimen name="index_menu_height">64.0dip</dimen>
+    <dimen name="build_content_width">314.0dip</dimen>
+    <dimen name="build_content_height">420.0dip</dimen>
+    <dimen name="build_content_card_width">284.0dip</dimen>
+    <dimen name="build_content_card_height">412.0dip</dimen>
+    <dimen name="build_content_poster_width">284.0dip</dimen>
+    <dimen name="build_content_poster_height">403.0dip</dimen>
+    <dimen name="build_small_content_width">70.0dip</dimen>
+    <dimen name="build_small_content_height">92.0dip</dimen>
+    <dimen name="build_content_right">6.0dip</dimen>
+    <dimen name="logo_title_height">64.0dip</dimen>
+    <dimen name="my_order_cover_width">60.0dip</dimen>
+    <dimen name="my_order_cover_height">80.0dip</dimen>
+    <dimen name="order_cover_width">75.0dip</dimen>
+    <dimen name="order_cover_height">100.0dip</dimen>
+    <dimen name="pic_review_full_width">90.0dip</dimen>
+    <dimen name="pic_review_full_height">124.0dip</dimen>
+    <dimen name="pic_review_image_width">86.0dip</dimen>
+    <dimen name="slidingmenu_offset">60.0dip</dimen>
+    <dimen name="list_padding">10.0dip</dimen>
+    <dimen name="shadow_width">15.0dip</dimen>
+</resources>
